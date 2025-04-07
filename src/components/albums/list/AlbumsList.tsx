@@ -16,7 +16,7 @@ export default function AlbumsList({ albums, setSelectedAlbum, setSelectedSong }
     setCurrentIndex(index)
   };
   return (
-    <ul className="flex gap-2 justify-between albums__list">
+    <ul className="flex gap-2 justify-between max-w-5xl mx-auto">
       {albums.map((album, index) => (
         <AlbumCard key={album.title} album={album} index={index} callback={handleAlbumClick} currentIndex={currentIndex} />
       ))}
